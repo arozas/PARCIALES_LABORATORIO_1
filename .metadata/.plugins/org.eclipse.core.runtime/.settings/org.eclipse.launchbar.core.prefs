@@ -1,0 +1,8 @@
+LaunchTargetManager/configs/Primer_Parcial_Laboratorio_I=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Primer_Parcial_Laboratorio_I
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Primer_Parcial_Laboratorio_I/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Primer_Parcial_Laboratorio_I/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -408,7 +408,7 @@ int uOperations_printSortedProductList(eProduct toPrintStruc[], int length, eUse
 
 	for (i = 0; i < length; i++)
 	{
-		if (toPrintStruc[i].isEmpty == FALSE)
+		if (toPrintStruc[i].isEmpty == status)
 		{
 			productCount++;
 		}
@@ -429,6 +429,206 @@ int uOperations_printSortedProductList(eProduct toPrintStruc[], int length, eUse
 	}
 	return rtn;
 
+}
+/// @fn int uOperations_printAllProducts(eProduct[], int, eUser[], int, int)
+/// @brief print all products with a determined name.
+///
+/// @param toPrintStruc the products array.
+/// @param length the products array length.
+/// @param userList the users array.
+/// @param userListLength the users array length.
+/// @param status the status of the products to print.
+/// @return return -1 if error, rtn 0 if ok.
+int uOperations_printAllNameProducts(eProduct toPrintStruc[], int length, eUser userList[], int userListLength, char productName[])
+{
+	int rtn = -1;
+	int i;
+
+	if (toPrintStruc != NULL && userList != NULL)
+	{
+		if (length > 0 && userListLength> 0)
+		{
+			printf("\n=========================================================================================================================|");
+			printf("\n%-6s%-25s%-15s %-20s%-8s%-25s%-10s%-10s", "ID","PRODUCTO","PRECIO","CATEGORIA","STOCK","VENDEDOR","ID","DISTANCIA");
+			printf("\n=========================================================================================================================|");
+			rtn=0;
+			for (i = 0; i < length; i++)
+			{
+				if (strcmp(toPrintStruc[i].productName,productName)==0)
+				{
+					uOperations_printOneProduct(toPrintStruc[i], userList, userListLength);
+				}
+			}
+			printf("\n=========================================================================================================================|");
+			rtn=0;
+		}
+	}
+	return rtn;
+}
+/// @fn int uOperations_printSortedProductList(eProduct[], int, eUser[], int, int, int)
+/// @brief Print a sorted product list per stock and a determined name.
+///
+/// @param toPrintStruc the product array to print.
+/// @param length	the product arrar length.
+/// @param userList the users array.
+/// @param userListLength the users array length.
+/// @param order the order of sorting, 1 for up or 2 down.
+/// @param status the status of the products to print.
+/// @return return -1 if error, rtn 0 if ok.
+int uOperations_printSortedNameProductList(eProduct toPrintStruc[], int length, eUser userList[], int userListLength, int order)
+{
+	int rtn =-1;
+	int i;
+	int productCount = 0;
+	int rtnGet;
+	char productName[25];
+
+
+	eProduct toSortProductList[length];
+
+	for (i = 0; i < length; i++)
+	{
+		if (toPrintStruc[i].isEmpty == FALSE || toPrintStruc[i].isEmpty == NO_STOCK)
+		{
+			productCount++;
+		}
+	}
+
+	if(productCount>0)
+	{
+		rtnGet = input_getStringletters("INGRESE EL NOMBRE DEL PRODUCTO A MOSTRAR:", RETRIES, "ERROR", productName, sizeof(productName));
+		if(rtnGet==0)
+		{
+			for ( i = 0; i < length; ++i)
+			{
+				toSortProductList[i] = toPrintStruc[i];
+			}
+			eProduct_StockSort(toSortProductList, length, order);
+			uOperations_printAllNameProducts(toSortProductList, length, userList, userListLength, productName);
+			rtn = 0;
+		}
+		else
+		{
+			puts("ERROR, MAL INGRESADO EL NOMBRE");
+		}
+	}
+	else
+	{
+		puts("NO HAY PRODUCTOS PARA MOSTRAR");
+	}
+	return rtn;
+
+}
+/// @fn int uOperations_printAllProducts(eProduct[], int, eUser[], int, int)
+/// @brief print all products of a determinate state.
+///
+/// @param toPrintStruc the products array.
+/// @param length the products array length.
+/// @param userList the users array.
+/// @param userListLength the users array length.
+/// @return return -1 if error, rtn 0 if ok.
+int uOperations_printAllUserProducts(eProduct toPrintStruc[], int length, eUser userList[], int userListLength, eUser loggedUser)
+{
+	int rtn = -1;
+	int i;
+
+	if (toPrintStruc != NULL && userList != NULL)
+	{
+		if (length > 0 && userListLength> 0)
+		{
+			printf("\n=========================================================================================================================|");
+			printf("\n%-6s%-25s%-15s %-20s%-8s%-25s%-10s%-10s", "ID","PRODUCTO","PRECIO","CATEGORIA","STOCK","VENDEDOR","ID","DISTANCIA");
+			printf("\n=========================================================================================================================|");
+			rtn=0;
+			for (i = 0; i < length; i++)
+			{
+				if (toPrintStruc[i].userId == loggedUser.id)
+				{
+					uOperations_printOneProduct(toPrintStruc[i], userList, userListLength);
+				}
+			}
+			printf("\n=========================================================================================================================|");
+			rtn=0;
+		}
+	}
+	return rtn;
+}
+/// @fn int uOperations_modifiedStock(eProduct[], int, eUser[], int, eUser)
+/// @brief Modifies the stock of selected product.
+///
+/// @param productList The products array.
+/// @param productLength The products array length.
+/// @param userList The users array.
+/// @param userListLength The users arrays length.
+/// @param loggedUser The user logged in.
+/// @return returns -1 if error, rtn 0 if ok.
+int uOperations_modifiedStock(eProduct productList[], int productLength, eUser userList[], int userListLength, eUser loggedUser)
+{
+	int rtn = -1;
+	int indexStock;
+	int productId;
+	int rtnGeIn;
+
+	eProduct eProductBuffer;
+
+	int stockAdd;
+
+	if (productList != NULL && userList != NULL)
+	{
+		if (productLength > 0 && userListLength> 0)
+		{
+			uOperations_printAllUserProducts(productList, productLength, userList, userListLength, loggedUser);
+			input_getInt("INGRESE EL ID DEL PRODUCTO A MODIFICAR STOCK:", RETRIES, 1000, 2000, "ERROR, REINGRESE EL ID:", &productId);
+			indexStock=eProduct_searchId(productList, productLength, productId);
+			eProductBuffer=productList[indexStock];
+
+			if (indexStock < 0)
+			{
+				puts("NO HAY PRODUCTO CON ESE ID");
+			}
+			else
+			{
+				rtnGeIn=input_getInt("INGRESE LA CANTIDAD DE STOCK A AUMENTAR O RESTAR:", RETRIES, -300, 300, "ERROR, REINGRESE LA CANTIDAD DE STOCK A AUMENTAR O RESTAR:", &stockAdd);
+
+				if(rtnGeIn==0)
+				{
+					if((eProductBuffer.stock+stockAdd)>=0)
+					{
+						eProductBuffer.stock=eProductBuffer.stock+stockAdd;
+
+						uOperations_printOneProduct(eProductBuffer, userList, userListLength);
+
+						if(menu_confirm("¿CONFIRMA LA MODIFICACIÓN DE STOCK?"
+								"\nINGRESE RESPUESTA <S/N> :"
+								, "ERROR, REINGRESE RESPUESTA:")==1)
+						{
+							productList[indexStock].stock=eProductBuffer.stock;
+
+							if(productList[indexStock].stock==0)
+							{
+								productList[indexStock].isEmpty=NO_STOCK;
+							}
+
+							rtn=0;
+						}
+						else
+						{
+							puts("¡BAJA CANCELADA!");
+						}
+					}
+					else
+					{
+						puts("¡ERROR DE CARGA!¡NO PUEDE TENER MENOS DE 0 PRODUCTOS!");
+					}
+				}
+				else
+				{
+					puts("¡ERROR DE CARGA!¡BAJA CANCELADA!");
+				}
+			}
+		}
+	}
+	return rtn;
 }
 /// @fn int uOperations_unregisterProduct(eProduct[], int, eUser[], int, int)
 /// @brief  Unregister a product.

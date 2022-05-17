@@ -1,0 +1,727 @@
+18:37:10 **** Clean-only build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make clean 
+rm -rf ./src/Primer_Parcial_Laboratorio_I.d ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.d ./src/eProduct.o ./src/eTracking.d ./src/eTracking.o ./src/eUser.d ./src/eUser.o ./src/input.d ./src/input.o ./src/menu.d ./src/menu.o ./src/myTime.d ./src/myTime.o ./src/operations.d ./src/operations.o ./src/uOperations.d ./src/uOperations.o
+rm -rf Primer_Parcial_Laboratorio_I
+ 
+18:37:11 **** Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/eProduct.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
+Finished building: ../src/eProduct.c
+ 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+Finished building: ../src/eTracking.c
+ 
+Building file: ../src/eUser.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eUser.d" -MT"src/eUser.o" -o "src/eUser.o" "../src/eUser.c"
+Finished building: ../src/eUser.c
+ 
+Building file: ../src/input.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/input.d" -MT"src/input.o" -o "src/input.o" "../src/input.c"
+Finished building: ../src/input.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building file: ../src/myTime.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myTime.d" -MT"src/myTime.o" -o "src/myTime.o" "../src/myTime.c"
+Finished building: ../src/myTime.c
+ 
+Building file: ../src/operations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/operations.d" -MT"src/operations.o" -o "src/operations.o" "../src/operations.c"
+Finished building: ../src/operations.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+18:37:18 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+18:50:59 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+18:54:53 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+18:54:54 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+18:55:48 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+18:55:49 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+18:57:51 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+18:58:52 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+18:58:52 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+19:04:34 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:06:14 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
+../src/Primer_Parcial_Laboratorio_I.c:122:103: error: ‘length’ undeclared (first use in this function)
+  122 |                                                         uOperations_printAllUserProducts(productList, length, usersList, userListLength, status, userLoggedIn)
+      |                                                                                                       ^~~~~~
+../src/Primer_Parcial_Laboratorio_I.c:122:103: note: each undeclared identifier is reported only once for each function it appears in
+../src/Primer_Parcial_Laboratorio_I.c:122:122: error: ‘userListLength’ undeclared (first use in this function)
+  122 |                                                         uOperations_printAllUserProducts(productList, length, usersList, userListLength, status, userLoggedIn)
+      |                                                                                                                          ^~~~~~~~~~~~~~
+../src/Primer_Parcial_Laboratorio_I.c:122:138: error: ‘status’ undeclared (first use in this function)
+  122 |                                                         uOperations_printAllUserProducts(productList, length, usersList, userListLength, status, userLoggedIn)
+      |                                                                                                                                          ^~~~~~
+../src/Primer_Parcial_Laboratorio_I.c:122:159: error: expected ‘;’ before ‘break’
+  122 |                                                         uOperations_printAllUserProducts(productList, length, usersList, userListLength, status, userLoggedIn)
+      |                                                                                                                                                               ^
+      |                                                                                                                                                               ;
+  123 |                                                         break;
+      |                                                         ~~~~~                                                                                                  
+make: *** [src/subdir.mk:44: src/Primer_Parcial_Laboratorio_I.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:06:43 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:08:11 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:08:46 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:08:47 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+19:23:02 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:23:09 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+19:29:20 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:29:22 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+19:29:31 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+19:32:58 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:32:59 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+19:34:56 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:36:28 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:39:41 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:56:02 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/eProduct.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
+../src/eProduct.c: In function ‘eProduct_StockSort’:
+../src/eProduct.c:585:17: error: ‘default’ label not within a switch statement
+  585 |                 default:
+      |                 ^~~~~~~
+../src/eProduct.c:587:25: error: break statement not within loop or switch
+  587 |                         break;
+      |                         ^~~~~
+make: *** [src/subdir.mk:44: src/eProduct.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:56:45 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eProduct.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
+Finished building: ../src/eProduct.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+../src/uOperations.c: In function ‘uOperations_printSortedNameProductList’:
+../src/uOperations.c:499:17: warning: implicit declaration of function ‘eProduct_StockSort’; did you mean ‘eProduct_Sort’? [-Wimplicit-function-declaration]
+  499 |                 eProduct_StockSort(toSortProductList, length, order);
+      |                 ^~~~~~~~~~~~~~~~~~
+      |                 eProduct_Sort
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+19:57:11 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eProduct.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
+Finished building: ../src/eProduct.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:03:21 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+../src/uOperations.c: In function ‘uOperations_printSortedNameProductList’:
+../src/uOperations.c:506:25: warning: implicit declaration of function ‘eProduct_StockSort’; did you mean ‘eProduct_Sort’? [-Wimplicit-function-declaration]
+  506 |                         eProduct_StockSort(toSortProductList, length, order);
+      |                         ^~~~~~~~~~~~~~~~~~
+      |                         eProduct_Sort
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:03:58 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/eProduct.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
+Finished building: ../src/eProduct.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:03:59 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+20:05:59 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
+../src/Primer_Parcial_Laboratorio_I.c:86:49: warning: implicit declaration of function ‘uOperations_printSortedNameProductList’; did you mean ‘uOperations_printSortedProductList’? [-Wimplicit-function-declaration]
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 uOperations_printSortedProductList
+../src/Primer_Parcial_Laboratorio_I.c:86:101: error: ‘length’ undeclared (first use in this function)
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
+      |                                                                                                     ^~~~~~
+../src/Primer_Parcial_Laboratorio_I.c:86:101: note: each undeclared identifier is reported only once for each function it appears in
+../src/Primer_Parcial_Laboratorio_I.c:86:120: error: ‘userListLength’ undeclared (first use in this function)
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
+      |                                                                                                                        ^~~~~~~~~~~~~~
+../src/Primer_Parcial_Laboratorio_I.c:86:140: error: ‘status’ undeclared (first use in this function)
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
+      |                                                                                                                                            ^~~~~~
+../src/Primer_Parcial_Laboratorio_I.c:86:147: error: expected ‘;’ before ‘break’
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
+      |                                                                                                                                                   ^
+      |                                                                                                                                                   ;
+   87 |                                                 break;
+      |                                                 ~~~~~                                                                                              
+make: *** [src/subdir.mk:44: src/Primer_Parcial_Laboratorio_I.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:46 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
+../src/Primer_Parcial_Laboratorio_I.c:86:49: warning: implicit declaration of function ‘uOperations_printSortedNameProductList’; did you mean ‘uOperations_printSortedProductList’? [-Wimplicit-function-declaration]
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 uOperations_printSortedProductList
+../src/Primer_Parcial_Laboratorio_I.c:86:101: error: ‘length’ undeclared (first use in this function)
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
+      |                                                                                                     ^~~~~~
+../src/Primer_Parcial_Laboratorio_I.c:86:101: note: each undeclared identifier is reported only once for each function it appears in
+../src/Primer_Parcial_Laboratorio_I.c:86:120: error: ‘userListLength’ undeclared (first use in this function)
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
+      |                                                                                                                        ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:44: src/Primer_Parcial_Laboratorio_I.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:49 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
+../src/Primer_Parcial_Laboratorio_I.c:86:49: warning: implicit declaration of function ‘uOperations_printSortedNameProductList’; did you mean ‘uOperations_printSortedProductList’? [-Wimplicit-function-declaration]
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 uOperations_printSortedProductList
+../src/Primer_Parcial_Laboratorio_I.c:86:101: error: ‘length’ undeclared (first use in this function)
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
+      |                                                                                                     ^~~~~~
+../src/Primer_Parcial_Laboratorio_I.c:86:101: note: each undeclared identifier is reported only once for each function it appears in
+../src/Primer_Parcial_Laboratorio_I.c:86:120: error: ‘userListLength’ undeclared (first use in this function)
+   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
+      |                                                                                                                        ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:44: src/Primer_Parcial_Laboratorio_I.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:08:13 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
+../src/Primer_Parcial_Laboratorio_I.c:86:49: warning: implicit declaration of function ‘uOperations_printSortedNameProductList’; did you mean ‘uOperations_printSortedProductList’? [-Wimplicit-function-declaration]
+   86 |                                                 uOperations_printSortedNameProductList(productList, MAX_PRODUCTS, usersList, MAX_USERS, UP);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 uOperations_printSortedProductList
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:08:54 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:08:55 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+20:09:09 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+20:09:10 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+20:10:08 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+20:21:50 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
+../src/eTracking.c:424:30: error: ‘(eTracking *)&userBuffer’ is a pointer; did you mean to use ‘->’?
+  424 |         distInSec=(userBuffer.distanceKM/10)*20;
+      |                              ^
+      |                              ->
+../src/eTracking.c:425:19: error: ‘(eTracking *)&userBuffer’ is a pointer; did you mean to use ‘->’?
+  425 |         userBuffer.arrivalTime=myTime_add(distInSec);
+      |                   ^
+      |                   ->
+../src/eTracking.c:425:32: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
+  425 |         userBuffer.arrivalTime=myTime_add(distInSec);
+      |                                ^~~~~~~~~~
+../src/eTracking.c:440:30: error: ‘ADMIN’ undeclared (first use in this function)
+  440 |         userBuffer[0].userId=ADMIN;
+      |                              ^~~~~
+../src/eTracking.c:440:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:44: src/eTracking.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:22:06 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
+../src/eTracking.c:424:30: error: ‘(eTracking *)&userBuffer’ is a pointer; did you mean to use ‘->’?
+  424 |         distInSec=(userBuffer.distanceKM/10)*20;
+      |                              ^
+      |                              ->
+../src/eTracking.c:425:19: error: ‘(eTracking *)&userBuffer’ is a pointer; did you mean to use ‘->’?
+  425 |         userBuffer.arrivalTime=myTime_add(distInSec);
+      |                   ^
+      |                   ->
+../src/eTracking.c:425:32: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
+  425 |         userBuffer.arrivalTime=myTime_add(distInSec);
+      |                                ^~~~~~~~~~
+make: *** [src/subdir.mk:44: src/eTracking.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:22:27 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
+../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
+  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
+      |                                   ^~~~~~~~~~
+../src/eTracking.c:438:21: warning: ‘userBuffer’ is used uninitialized [-Wuninitialized]
+  438 |         userList[11]=userBuffer[1];
+      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
+../src/eTracking.c:422:19: note: ‘userBuffer’ declared here
+  422 |         eTracking userBuffer[6];
+      |                   ^~~~~~~~~~
+Finished building: ../src/eTracking.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:24:47 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
+../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
+  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
+      |                                   ^~~~~~~~~~
+../src/eTracking.c:449:21: warning: ‘userBuffer’ is used uninitialized [-Wuninitialized]
+  449 |         userList[12]=userBuffer[2];
+      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
+../src/eTracking.c:422:19: note: ‘userBuffer’ declared here
+  422 |         eTracking userBuffer[6];
+      |                   ^~~~~~~~~~
+Finished building: ../src/eTracking.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:25:42 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
+../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
+  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
+      |                                   ^~~~~~~~~~
+../src/eTracking.c:461:21: warning: ‘userBuffer’ is used uninitialized [-Wuninitialized]
+  461 |         userList[13]=userBuffer[3];
+      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
+../src/eTracking.c:422:19: note: ‘userBuffer’ declared here
+  422 |         eTracking userBuffer[6];
+      |                   ^~~~~~~~~~
+Finished building: ../src/eTracking.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:26:39 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
+../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
+  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
+      |                                   ^~~~~~~~~~
+../src/eTracking.c:473:21: warning: ‘userBuffer’ is used uninitialized [-Wuninitialized]
+  473 |         userList[14]=userBuffer[4];
+      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
+../src/eTracking.c:422:19: note: ‘userBuffer’ declared here
+  422 |         eTracking userBuffer[6];
+      |                   ^~~~~~~~~~
+Finished building: ../src/eTracking.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:28:48 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
+../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
+  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
+      |                                   ^~~~~~~~~~
+Finished building: ../src/eTracking.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:29:41 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+Finished building: ../src/eTracking.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:30:14 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
+Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/uOperations.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
+Finished building: ../src/uOperations.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:30:15 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+20:32:44 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/eTracking.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
+Finished building: ../src/eTracking.c
+ 
+Building target: Primer_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
+Finished building target: Primer_Parcial_Laboratorio_I
+ 
+20:32:46 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+20:34:08 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.

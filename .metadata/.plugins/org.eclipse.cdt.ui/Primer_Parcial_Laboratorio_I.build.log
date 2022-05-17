@@ -1,0 +1,6 @@
+20:34:08 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+
+20:34:09 Build Finished. 0 errors, 0 warnings. (took 466ms)
+

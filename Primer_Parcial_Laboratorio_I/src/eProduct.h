@@ -56,6 +56,7 @@ eProduct eProduct_ModifyOne(eProduct toMofiedStruc);
 int eProduct_ModifyArray(eProduct toMofiedStruc[], int length);
 int eProduct_Sort(eProduct array[], int TAM, int criterio);
 int eProduct_CategorySort(eProduct productList[], int TAM, int criterio);
+int eProduct_StockSort(eProduct productList[], int TAM, int criterio);
 void eProduct_ForceProducts(eProduct productList[]);
 
 #endif /* EPRODUCT_H_ */

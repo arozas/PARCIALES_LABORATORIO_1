@@ -24,7 +24,7 @@ int main(void)
 	int adminMenu;
 	int userMenu;
 	int userStatBuyMenu;
-	int rtnFun;
+	int userSellMenu;
 
 	eUser usersList[MAX_USERS];
 	eProduct productList[MAX_PRODUCTS];
@@ -62,7 +62,8 @@ int main(void)
 							"\n3) BAJA DE UN PRODUCTO."
 							"\n4) BAJA DE UN USUARIO."
 							"\n5) VER TRACKING GLOBAL"
-							"\n\n6) SALIR", "ERROR, DEBE INGRESAR UNA OPCIÓN <1-6>:", 1, 6);
+							"\n6) FILTRAR POR NOMBRE DE PRODUCTO"
+							"\n\n7) SALIR", "ERROR, DEBE INGRESAR UNA OPCIÓN <1-6>:", 1, 7);
 					switch(adminMenu)
 					{
 					case 1:
@@ -81,8 +82,11 @@ int main(void)
 						uOperations_updateTrackingStatus(trackingList, MAX_TRACKING);
 						uOperations_printAllTrackings(trackingList, MAX_TRACKING, usersList, MAX_USERS, productList, MAX_PRODUCTS);
 						break;
+					case 6:
+						uOperations_printSortedNameProductList(productList, MAX_PRODUCTS, usersList, MAX_USERS, UP);
+						break;
 					}
-				}while(adminMenu<6);
+				}while(adminMenu<7);
 				break;
 			case 1:
 				do
@@ -100,11 +104,29 @@ int main(void)
 					switch(userMenu)
 					{
 					case 1:
-						rtnFun=uOperations_buyProduct(productList, MAX_PRODUCTS, usersList, MAX_USERS, trackingList, MAX_TRACKING, userLoggedIn);
-						printf("\nRETORNO DE COMPRA: %d",rtnFun);
+						uOperations_buyProduct(productList, MAX_PRODUCTS, usersList, MAX_USERS, trackingList, MAX_TRACKING, userLoggedIn);
 						break;
 					case 2:
-						uOperations_sellProduct(productList, MAX_PRODUCTS, usersList,MAX_USERS, userLoggedIn);
+						do
+						{
+						userSellMenu=menu_menu(
+								"***************************"
+								"\n\t\t\t** 1er EXAMEN LAB 1 - 1H **"
+								"\n\t\t\t******* MENU VENTAS *******"
+								"\n\t\t\t***************************",
+								"\n\n1) LISTAR NUEVO PRODUCTO"
+								"\n2) REPONER STOCK"
+								"\n\n3) SALIR", "ERROR, DEBE INGRESAR UNA OPCIÓN <1-3>:", 1, 3);
+						switch(userSellMenu)
+						{
+						case 1:
+							uOperations_sellProduct(productList, MAX_PRODUCTS, usersList,MAX_USERS, userLoggedIn);
+							break;
+						case 2:
+							uOperations_modifiedStock(productList, MAX_PRODUCTS, usersList, MAX_USERS, userLoggedIn);
+							break;
+						}
+						}while(userSellMenu<3);
 						break;
 					case 3:
 						do
@@ -114,7 +136,8 @@ int main(void)
 									"***************************"
 									"\n\t\t\t** 1er EXAMEN LAB 1 - 1H **"
 									"\n\t\t\t***** ESTADOS COMPRAS *****"
-									"\n\t\t\t***************************", "\n\n1) ESTADO DE COMPRAS"
+									"\n\t\t\t***************************",
+									"\n\n1) ESTADO DE COMPRAS"
 									"\n2) CANCELAR UNA COMPRA"
 									"\n\n3) SALIR", "ERROR, DEBE INGRESAR UNA OPCIÓN <1-3>:", 1, 3);
 							switch(userStatBuyMenu)
@@ -141,11 +164,12 @@ int main(void)
 			}
 			break;
 			case 2:
-				rtnFun=uOperations_RegisterUser(usersList, MAX_USERS);
+				uOperations_RegisterUser(usersList, MAX_USERS);
 				break;
 			case 3:
 				eUser_ForceUsers(usersList);
 				eProduct_ForceProducts(productList);
+				eTracking_ForceTrackings(trackingList);
 				puts("¡CARGA FORZADA EXITOSA!");
 				break;
 		}

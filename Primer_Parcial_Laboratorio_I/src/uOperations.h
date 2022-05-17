@@ -17,7 +17,6 @@
 #include "menu.h"
 #include "input.h"
 #include "operations.h"
-#include "myTime.h"
 
 int uOperations_RegisterUser(eUser *userList, int length);
 int uOperations_unregisterUser(eUser userList[], int length, eProduct productList[], int productLength);
@@ -27,6 +26,9 @@ int uOperations_printAllUsers(eUser toPrintStruc[], int length, eProduct product
 void uOperations_printOneProduct(eProduct toPrintStruc, eUser userList[], int userListLength);
 int uOperations_printAllProducts(eProduct toPrintStruc[], int length, eUser userList[], int userListLength, int status);
 int uOperations_printSortedProductList(eProduct toPrintStruc[], int length, eUser userList[], int userListLength, int order, int status);
+int uOperations_printSortedNameProductList(eProduct toPrintStruc[], int length, eUser userList[], int userListLength, int order);
+int uOperations_printAllUserProducts(eProduct toPrintStruc[], int length, eUser userList[], int userListLength, eUser loggedUser);
+int uOperations_modifiedStock(eProduct toPrintStruc[], int length, eUser userList[], int userListLength, eUser loggedUser);
 int uOperations_unregisterProduct(eProduct productList[], int productLength, eUser userList[], int userListLength, int status);
 void uOperations_printOneTracking(eTracking toPrintStruc, eUser userList[], int userListLength, eProduct productList[], int productLength);
 int uOperations_printAllTrackings(eTracking toPrintStruc[],int trackingLength, eUser userList[], int userListLength, eProduct productList[], int productLength);

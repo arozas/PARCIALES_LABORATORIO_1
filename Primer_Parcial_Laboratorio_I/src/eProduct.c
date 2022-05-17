@@ -532,6 +532,59 @@ int eProduct_CategorySort(eProduct productList[], int TAM, int criterio)
 	}
 	return rtn;
 }
+int eProduct_StockSort(eProduct productList[], int TAM, int criterio)
+{
+	int rtn = -1;
+	int i;
+	int j;
+	eProduct aux;
+
+	if (productList != NULL && TAM > 0)
+	{
+		switch (criterio)
+		{
+		case 1:
+			for (i = 0; i < TAM - 1; i++)
+			{
+				for (j = i + 1; j < TAM; j++)
+				{
+					if (productList[i].isEmpty == FALSE
+							&& productList[j].isEmpty == FALSE)
+					{
+						if(productList[i].stock > productList[j].stock)
+						{
+							aux = productList[i];
+							productList[i] = productList[j];
+							productList[j] = aux;
+						}
+					}
+				}
+			}
+			rtn = 0;
+			break;
+		case 2:
+			for (i = 0; i < TAM - 1; i++)
+			{
+				for (j = i + 1; j < TAM; j++)
+				{
+					if (productList[i].isEmpty == FALSE
+							&& productList[j].isEmpty == FALSE)
+					{
+						if(productList[i].stock > productList[j].stock)
+						{
+							aux = productList[i];
+							productList[i] = productList[j];
+							productList[j] = aux;
+						}
+					}
+				}
+			}
+			rtn = 0;
+			break;
+		}
+	}
+	return rtn;
+}
 void eProduct_ForceProducts(eProduct productList[])
 {
 	eProduct userBuffer[6];

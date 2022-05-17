@@ -417,3 +417,82 @@ int eTracking_Sort(eTracking array[], int TAM, int criterio)
 	}
 	return rtn;
 }
+void eTracking_ForceTrackings(eTracking userList[])
+{
+	eTracking userBuffer[6];
+	double distInSec;
+
+	userBuffer[0].trackingId=1010;
+	userBuffer[0].productId=1090;
+	userBuffer[0].userId=1011;
+	userBuffer[0].buyerId=1012;
+	userBuffer[0].isEmpty= FALSE;
+	userBuffer[0].amount = 1;
+	userBuffer[0].priceCost = 100;
+	userBuffer[0].distanceKM = 20;
+	distInSec=(userBuffer[0].distanceKM/10)*20;
+	userBuffer[0].arrivalTime=myTime_add(distInSec);
+
+	userBuffer[1].trackingId=1011;
+	userBuffer[1].productId=1091;
+	userBuffer[1].userId=1012;
+	userBuffer[1].buyerId=1013;
+	userBuffer[1].isEmpty= FALSE;
+	userBuffer[1].amount = 1;
+	userBuffer[1].priceCost = 100;
+	userBuffer[1].distanceKM = 30;
+	distInSec=(userBuffer[1].distanceKM/10)*20;
+	userBuffer[1].arrivalTime=myTime_add(distInSec);
+
+	userBuffer[2].trackingId=1012;
+	userBuffer[2].productId=1092;
+	userBuffer[2].userId=1013;
+	userBuffer[2].buyerId=1014;
+	userBuffer[2].isEmpty= FALSE;
+	userBuffer[2].amount = 1;
+	userBuffer[2].priceCost = 100;
+	userBuffer[2].distanceKM = 50;
+	distInSec=(userBuffer[2].distanceKM/10)*20;
+	userBuffer[2].arrivalTime=myTime_add(distInSec);
+
+	userBuffer[3].trackingId=1013;
+	userBuffer[3].productId=1093;
+	userBuffer[3].userId=1014;
+	userBuffer[3].buyerId=1015;
+	userBuffer[3].isEmpty= FALSE;
+	userBuffer[3].amount = 1;
+	userBuffer[3].priceCost = 100;
+	userBuffer[3].distanceKM = 80;
+	userBuffer[3].status = CANCELLED;
+	distInSec=(userBuffer[3].distanceKM/10)*20;
+	userBuffer[3].arrivalTime=myTime_add(distInSec);
+
+	userBuffer[4].trackingId=1014;
+	userBuffer[4].productId=1094;
+	userBuffer[4].userId=1015;
+	userBuffer[4].buyerId=1011;
+	userBuffer[4].isEmpty= FALSE;
+	userBuffer[4].amount = 1;
+	userBuffer[4].priceCost = 100;
+	userBuffer[4].distanceKM = 150;
+	distInSec=(userBuffer[4].distanceKM/10)*20;
+	userBuffer[4].arrivalTime=myTime_add(distInSec);
+
+	userBuffer[5].trackingId=1015;
+	userBuffer[5].productId=1095;
+	userBuffer[5].userId=1015;
+	userBuffer[5].buyerId=1011;
+	userBuffer[5].isEmpty= FALSE;
+	userBuffer[5].amount = 1;
+	userBuffer[5].priceCost = 100;
+	userBuffer[5].distanceKM = 150;
+	distInSec=(userBuffer[5].distanceKM/10)*20;
+	userBuffer[5].arrivalTime=myTime_add(distInSec);
+
+	userList[10]=userBuffer[0];
+	userList[11]=userBuffer[1];
+	userList[12]=userBuffer[2];
+	userList[13]=userBuffer[3];
+	userList[14]=userBuffer[4];
+	userList[15]=userBuffer[5];
+}

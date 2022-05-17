@@ -20,6 +20,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "myTime.h"
 
 //ABM
 typedef struct
@@ -50,5 +51,6 @@ int eTracking_unRegisterArray(eTracking toUnRegisterStruc[], int length);
 eTracking eTracking_ModifyOne(eTracking toMofiedStruc);
 int eTracking_ModifyArray(eTracking toMofiedStruc[], int length);
 int eTracking_Sort(eTracking array[], int TAM, int criterio);
+void eTracking_ForceTrackings(eTracking userList[]);
 
 #endif /* ETRACKING_H_ */
