@@ -170,6 +170,7 @@ int main(void)
 				eUser_ForceUsers(usersList);
 				eProduct_ForceProducts(productList);
 				eTracking_ForceTrackings(trackingList);
+
 				puts("¡CARGA FORZADA EXITOSA!");
 				break;
 		}

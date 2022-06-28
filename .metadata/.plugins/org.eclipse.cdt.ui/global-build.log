@@ -1,29 +1,56 @@
-18:37:10 **** Clean-only build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:26:06 **** Clean-only build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make clean 
-rm -rf ./src/Primer_Parcial_Laboratorio_I.d ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.d ./src/eProduct.o ./src/eTracking.d ./src/eTracking.o ./src/eUser.d ./src/eUser.o ./src/input.d ./src/input.o ./src/menu.d ./src/menu.o ./src/myTime.d ./src/myTime.o ./src/operations.d ./src/operations.o ./src/uOperations.d ./src/uOperations.o
-rm -rf Primer_Parcial_Laboratorio_I
+rm -rf ./src/Arcade.d ./src/Arcade.o ./src/Juego.d ./src/Juego.o ./src/LinkedList.d ./src/LinkedList.o ./src/Salon.d ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.d ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.d ./src/controller.o ./src/input.d ./src/input.o ./src/menu.d ./src/menu.o ./src/operations.d ./src/operations.o ./src/parser.d ./src/parser.o
+rm -rf Segundo_Parcial_Laboratorio_I
  
-18:37:11 **** Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:26:07 **** Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Building file: ../src/Arcade.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
  
-Building file: ../src/eProduct.c
+Building file: ../src/Juego.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
-Finished building: ../src/eProduct.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Juego.d" -MT"src/Juego.o" -o "src/Juego.o" "../src/Juego.c"
+Finished building: ../src/Juego.c
  
-Building file: ../src/eTracking.c
+Building file: ../src/LinkedList.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-Finished building: ../src/eTracking.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.o" -o "src/LinkedList.o" "../src/LinkedList.c"
+Finished building: ../src/LinkedList.c
  
-Building file: ../src/eUser.c
+Building file: ../src/Salon.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eUser.d" -MT"src/eUser.o" -o "src/eUser.o" "../src/eUser.c"
-Finished building: ../src/eUser.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Salon.d" -MT"src/Salon.o" -o "src/Salon.o" "../src/Salon.c"
+Finished building: ../src/Salon.c
+ 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+../src/Segundo_Parcial_Laboratorio_I.c: In function ‘controller_removeArcade’:
+../src/Segundo_Parcial_Laboratorio_I.c:13:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   13 | {
+      | ^
+In file included from ../src/Segundo_Parcial_Laboratorio_I.c:10:
+../src/controller.h:52:5: error: old-style parameter declarations in prototyped function definition
+   52 | int controller_removeArcade(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedList* pListGame)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Segundo_Parcial_Laboratorio_I.c:137: error: expected ‘{’ at end of input
+../src/Segundo_Parcial_Laboratorio_I.c:137: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/subdir.mk:47: src/Segundo_Parcial_Laboratorio_I.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:26:15 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
  
 Building file: ../src/input.c
 Invoking: GCC C Compiler
@@ -35,693 +62,1856 @@ Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
 Finished building: ../src/menu.c
  
-Building file: ../src/myTime.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myTime.d" -MT"src/myTime.o" -o "src/myTime.o" "../src/myTime.c"
-Finished building: ../src/myTime.c
- 
 Building file: ../src/operations.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/operations.d" -MT"src/operations.o" -o "src/operations.o" "../src/operations.c"
 Finished building: ../src/operations.c
  
-Building file: ../src/uOperations.c
+Building file: ../src/parser.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+Finished building: ../src/parser.c
  
-Building target: Primer_Parcial_Laboratorio_I
+Building target: Segundo_Parcial_Laboratorio_I
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
  
-18:37:18 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:26:18 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-18:50:59 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:28:36 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
  
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
+Building target: Segundo_Parcial_Laboratorio_I
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
  
-18:54:53 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-18:54:54 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:28:37 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-18:55:48 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-18:55:49 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:28:55 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-18:57:51 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-18:58:52 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:28:56 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-18:58:52 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:29:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-19:04:34 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:29:20 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+make: No se hace nada para 'all'.
+22:29:47 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:30:31 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
  
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
+Building target: Segundo_Parcial_Laboratorio_I
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
  
-19:06:14 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+22:32:46 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
-../src/Primer_Parcial_Laboratorio_I.c:122:103: error: ‘length’ undeclared (first use in this function)
-  122 |                                                         uOperations_printAllUserProducts(productList, length, usersList, userListLength, status, userLoggedIn)
-      |                                                                                                       ^~~~~~
-../src/Primer_Parcial_Laboratorio_I.c:122:103: note: each undeclared identifier is reported only once for each function it appears in
-../src/Primer_Parcial_Laboratorio_I.c:122:122: error: ‘userListLength’ undeclared (first use in this function)
-  122 |                                                         uOperations_printAllUserProducts(productList, length, usersList, userListLength, status, userLoggedIn)
-      |                                                                                                                          ^~~~~~~~~~~~~~
-../src/Primer_Parcial_Laboratorio_I.c:122:138: error: ‘status’ undeclared (first use in this function)
-  122 |                                                         uOperations_printAllUserProducts(productList, length, usersList, userListLength, status, userLoggedIn)
-      |                                                                                                                                          ^~~~~~
-../src/Primer_Parcial_Laboratorio_I.c:122:159: error: expected ‘;’ before ‘break’
-  122 |                                                         uOperations_printAllUserProducts(productList, length, usersList, userListLength, status, userLoggedIn)
-      |                                                                                                                                                               ^
-      |                                                                                                                                                               ;
-  123 |                                                         break;
-      |                                                         ~~~~~                                                                                                  
-make: *** [src/subdir.mk:44: src/Primer_Parcial_Laboratorio_I.o] Error 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+22:33:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+22:33:04 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:35:16 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_removeArcade’:
+../src/controller.c:782:13: warning: unused variable ‘ArcadeIndex’ [-Wunused-variable]
+  782 |         int ArcadeIndex;
+      |             ^~~~~~~~~~~
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+22:35:38 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+22:35:39 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:35:58 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:50:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+22:50:33 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:51:31 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+22:51:34 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:51:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:51:59 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:52:56 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+22:52:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+22:53:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+22:53:34 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:04:16 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c:808:5: error: conflicting types for ‘controller_removeSalon’; have ‘int(LinkedList *, LinkedList *, LinkedList *)’
+  808 | int controller_removeSalon(LinkedList* pListSalon, LinkedList* pListArcade, LinkedList* pListGame)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/controller.c:10:
+../src/controller.h:51:5: note: previous declaration of ‘controller_removeSalon’ with type ‘int(LinkedList *)’
+   51 | int controller_removeSalon(LinkedList* pListSalon);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-19:06:43 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+23:04:35 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:08:11 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:08:46 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:08:47 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-make: No se hace nada para 'all'.
-19:23:02 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:23:09 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-make: No se hace nada para 'all'.
-19:29:20 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:29:22 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-make: No se hace nada para 'all'.
-19:29:31 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-make: No se hace nada para 'all'.
-19:32:58 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:32:59 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-make: No se hace nada para 'all'.
-19:34:56 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:36:28 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:39:41 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-19:56:02 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building file: ../src/eProduct.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
-../src/eProduct.c: In function ‘eProduct_StockSort’:
-../src/eProduct.c:585:17: error: ‘default’ label not within a switch statement
-  585 |                 default:
-      |                 ^~~~~~~
-../src/eProduct.c:587:25: error: break statement not within loop or switch
-  587 |                         break;
-      |                         ^~~~~
-make: *** [src/subdir.mk:44: src/eProduct.o] Error 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+../src/Segundo_Parcial_Laboratorio_I.c: In function ‘main’:
+../src/Segundo_Parcial_Laboratorio_I.c:54:41: error: too few arguments to function ‘controller_removeSalon’
+   54 |                                         controller_removeSalon(salonList);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/Segundo_Parcial_Laboratorio_I.c:10:
+../src/controller.h:51:5: note: declared here
+   51 | int controller_removeSalon(LinkedList* pListSalon, LinkedList* pListArcade, LinkedList* pListGame);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:47: src/Segundo_Parcial_Laboratorio_I.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-19:56:45 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+23:04:50 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/eProduct.c
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
-Finished building: ../src/eProduct.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
  
-Building file: ../src/uOperations.c
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-../src/uOperations.c: In function ‘uOperations_printSortedNameProductList’:
-../src/uOperations.c:499:17: warning: implicit declaration of function ‘eProduct_StockSort’; did you mean ‘eProduct_Sort’? [-Wimplicit-function-declaration]
-  499 |                 eProduct_StockSort(toSortProductList, length, order);
-      |                 ^~~~~~~~~~~~~~~~~~
-      |                 eProduct_Sort
-Finished building: ../src/uOperations.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
  
-Building target: Primer_Parcial_Laboratorio_I
+Building target: Segundo_Parcial_Laboratorio_I
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
  
-19:57:11 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/eProduct.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
-Finished building: ../src/eProduct.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:03:21 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-../src/uOperations.c: In function ‘uOperations_printSortedNameProductList’:
-../src/uOperations.c:506:25: warning: implicit declaration of function ‘eProduct_StockSort’; did you mean ‘eProduct_Sort’? [-Wimplicit-function-declaration]
-  506 |                         eProduct_StockSort(toSortProductList, length, order);
-      |                         ^~~~~~~~~~~~~~~~~~
-      |                         eProduct_Sort
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:03:58 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building file: ../src/eProduct.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eProduct.d" -MT"src/eProduct.o" -o "src/eProduct.o" "../src/eProduct.c"
-Finished building: ../src/eProduct.c
- 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:03:59 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+23:04:51 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-20:05:59 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+23:05:48 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+make: No se hace nada para 'all'.
+23:05:49 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:06:37 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
-../src/Primer_Parcial_Laboratorio_I.c:86:49: warning: implicit declaration of function ‘uOperations_printSortedNameProductList’; did you mean ‘uOperations_printSortedProductList’? [-Wimplicit-function-declaration]
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
-      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                                                 uOperations_printSortedProductList
-../src/Primer_Parcial_Laboratorio_I.c:86:101: error: ‘length’ undeclared (first use in this function)
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
-      |                                                                                                     ^~~~~~
-../src/Primer_Parcial_Laboratorio_I.c:86:101: note: each undeclared identifier is reported only once for each function it appears in
-../src/Primer_Parcial_Laboratorio_I.c:86:120: error: ‘userListLength’ undeclared (first use in this function)
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
-      |                                                                                                                        ^~~~~~~~~~~~~~
-../src/Primer_Parcial_Laboratorio_I.c:86:140: error: ‘status’ undeclared (first use in this function)
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
-      |                                                                                                                                            ^~~~~~
-../src/Primer_Parcial_Laboratorio_I.c:86:147: error: expected ‘;’ before ‘break’
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP, status)
-      |                                                                                                                                                   ^
-      |                                                                                                                                                   ;
-   87 |                                                 break;
-      |                                                 ~~~~~                                                                                              
-make: *** [src/subdir.mk:44: src/Primer_Parcial_Laboratorio_I.o] Error 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:37:31 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:37:54 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:40:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:41:17 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:41:20 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:42:55 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:44:00 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:44:01 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:44:14 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:44:15 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:45:18 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:45:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:49:54 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_removeSalon’:
+../src/controller.c:840:62: warning: implicit declaration of function ‘controller_removeArcadeBySalonID’; did you mean ‘controller_removeArcadeBySalon’? [-Wimplicit-function-declaration]
+  840 |                                                 int rtnArc = controller_removeArcadeBySalonID(pListArcade, pListSalon, pListGame, pSalon->id);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                              controller_removeArcadeBySalon
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+/usr/bin/ld: ./src/controller.o: en la función `controller_removeSalon':
+/home/alejandro/Documentos/Estudio/Parciales_Laboratorio_1/PARCIALES_LABORATORIO_1/Segundo_Parcial_Laboratorio_I/Debug/../src/controller.c:840: referencia a `controller_removeArcadeBySalonID' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [makefile:45: Segundo_Parcial_Laboratorio_I] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-20:06:46 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+23:50:07 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
-../src/Primer_Parcial_Laboratorio_I.c:86:49: warning: implicit declaration of function ‘uOperations_printSortedNameProductList’; did you mean ‘uOperations_printSortedProductList’? [-Wimplicit-function-declaration]
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
-      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                                                 uOperations_printSortedProductList
-../src/Primer_Parcial_Laboratorio_I.c:86:101: error: ‘length’ undeclared (first use in this function)
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
-      |                                                                                                     ^~~~~~
-../src/Primer_Parcial_Laboratorio_I.c:86:101: note: each undeclared identifier is reported only once for each function it appears in
-../src/Primer_Parcial_Laboratorio_I.c:86:120: error: ‘userListLength’ undeclared (first use in this function)
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
-      |                                                                                                                        ^~~~~~~~~~~~~~
-make: *** [src/subdir.mk:44: src/Primer_Parcial_Laboratorio_I.o] Error 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_removeSalon’:
+../src/controller.c:840:62: warning: implicit declaration of function ‘controller_removeArcadeBySalonID’; did you mean ‘controller_removeArcadeBySalon’? [-Wimplicit-function-declaration]
+  840 |                                                 int rtnArc = controller_removeArcadeBySalonID(pListArcade, pListSalon, pListGame, pSalon->id);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                              controller_removeArcadeBySalon
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+/usr/bin/ld: ./src/controller.o: en la función `controller_removeSalon':
+/home/alejandro/Documentos/Estudio/Parciales_Laboratorio_1/PARCIALES_LABORATORIO_1/Segundo_Parcial_Laboratorio_I/Debug/../src/controller.c:840: referencia a `controller_removeArcadeBySalonID' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [makefile:45: Segundo_Parcial_Laboratorio_I] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-20:06:49 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+23:50:36 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
-../src/Primer_Parcial_Laboratorio_I.c:86:49: warning: implicit declaration of function ‘uOperations_printSortedNameProductList’; did you mean ‘uOperations_printSortedProductList’? [-Wimplicit-function-declaration]
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
-      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                                                 uOperations_printSortedProductList
-../src/Primer_Parcial_Laboratorio_I.c:86:101: error: ‘length’ undeclared (first use in this function)
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
-      |                                                                                                     ^~~~~~
-../src/Primer_Parcial_Laboratorio_I.c:86:101: note: each undeclared identifier is reported only once for each function it appears in
-../src/Primer_Parcial_Laboratorio_I.c:86:120: error: ‘userListLength’ undeclared (first use in this function)
-   86 |                                                 uOperations_printSortedNameProductList(productList, length, usersList, userListLength, UP);
-      |                                                                                                                        ^~~~~~~~~~~~~~
-make: *** [src/subdir.mk:44: src/Primer_Parcial_Laboratorio_I.o] Error 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:50:39 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:51:26 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:51:27 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:55:01 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_removeArcadeBySalon’:
+../src/controller.c:941:13: warning: unused variable ‘ArcadeIndex’ [-Wunused-variable]
+  941 |         int ArcadeIndex;
+      |             ^~~~~~~~~~~
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:55:17 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:55:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:56:24 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:56:30 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+23:58:41 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+23:58:42 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:00:15 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:00:17 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:00:50 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:01:22 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:01:24 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:03:06 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:03:13 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:04:31 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:04:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:06:10 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:06:13 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:07:38 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:07:39 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:15:54 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:15:55 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:16:24 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:18:22 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:18:23 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:19:04 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:23:46 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:23:46 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:24:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:27:15 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_countArcadeBySalon’:
+../src/controller.c:981:13: warning: unused variable ‘ArcadeIndex’ [-Wunused-variable]
+  981 |         int ArcadeIndex;
+      |             ^~~~~~~~~~~
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:27:27 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:29:47 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_removeSalon’:
+../src/controller.c:826:107: error: expected ‘;’ before ‘if’
+  826 |                                 printf( "\n------------------------------------------------------------|")
+      |                                                                                                           ^
+      |                                                                                                           ;
+  827 |                                 if(controller_countArcadeBySalon(pListArcade, pListSalon, pListGame, pSalon->id)>0)
+      |                                 ~~                                                                         
+../src/controller.c:812:13: warning: unused variable ‘passangerIndex’ [-Wunused-variable]
+  812 |         int passangerIndex;
+      |             ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-20:08:13 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+00:29:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-../src/Primer_Parcial_Laboratorio_I.c: In function ‘main’:
-../src/Primer_Parcial_Laboratorio_I.c:86:49: warning: implicit declaration of function ‘uOperations_printSortedNameProductList’; did you mean ‘uOperations_printSortedProductList’? [-Wimplicit-function-declaration]
-   86 |                                                 uOperations_printSortedNameProductList(productList, MAX_PRODUCTS, usersList, MAX_USERS, UP);
-      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |                                                 uOperations_printSortedProductList
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
  
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
+Building target: Segundo_Parcial_Laboratorio_I
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
  
-20:08:54 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+00:29:59 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
+make: No se hace nada para 'all'.
+00:30:00 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:30:23 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
  
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
+Building target: Segundo_Parcial_Laboratorio_I
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
  
-20:08:55 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+00:30:24 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-20:09:09 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+00:30:51 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-make: No se hace nada para 'all'.
-20:09:10 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-make: No se hace nada para 'all'.
-20:10:08 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-make: No se hace nada para 'all'.
-20:21:50 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/eTracking.c
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
-../src/eTracking.c:424:30: error: ‘(eTracking *)&userBuffer’ is a pointer; did you mean to use ‘->’?
-  424 |         distInSec=(userBuffer.distanceKM/10)*20;
-      |                              ^
-      |                              ->
-../src/eTracking.c:425:19: error: ‘(eTracking *)&userBuffer’ is a pointer; did you mean to use ‘->’?
-  425 |         userBuffer.arrivalTime=myTime_add(distInSec);
-      |                   ^
-      |                   ->
-../src/eTracking.c:425:32: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
-  425 |         userBuffer.arrivalTime=myTime_add(distInSec);
-      |                                ^~~~~~~~~~
-../src/eTracking.c:440:30: error: ‘ADMIN’ undeclared (first use in this function)
-  440 |         userBuffer[0].userId=ADMIN;
-      |                              ^~~~~
-../src/eTracking.c:440:30: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [src/subdir.mk:44: src/eTracking.o] Error 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:30:51 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:31:39 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:31:40 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:32:12 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:33:10 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:33:11 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:33:35 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:33:36 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:34:13 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:34:15 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:47:55 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:54:50 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:54:52 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+00:55:16 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+00:56:06 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+../src/Segundo_Parcial_Laboratorio_I.c: In function ‘controller_editArcade’:
+../src/Segundo_Parcial_Laboratorio_I.c:13:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   13 | {
+      | ^
+In file included from ../src/Segundo_Parcial_Laboratorio_I.c:10:
+../src/controller.h:36:5: error: old-style parameter declarations in prototyped function definition
+   36 | int controller_editArcade(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedList* pListGame)
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../src/Segundo_Parcial_Laboratorio_I.c:139: error: expected ‘{’ at end of input
+../src/Segundo_Parcial_Laboratorio_I.c:139: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/subdir.mk:47: src/Segundo_Parcial_Laboratorio_I.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-20:22:06 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+00:56:09 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/eTracking.c
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
-../src/eTracking.c:424:30: error: ‘(eTracking *)&userBuffer’ is a pointer; did you mean to use ‘->’?
-  424 |         distInSec=(userBuffer.distanceKM/10)*20;
-      |                              ^
-      |                              ->
-../src/eTracking.c:425:19: error: ‘(eTracking *)&userBuffer’ is a pointer; did you mean to use ‘->’?
-  425 |         userBuffer.arrivalTime=myTime_add(distInSec);
-      |                   ^
-      |                   ->
-../src/eTracking.c:425:32: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
-  425 |         userBuffer.arrivalTime=myTime_add(distInSec);
-      |                                ^~~~~~~~~~
-make: *** [src/subdir.mk:44: src/eTracking.o] Error 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+../src/Segundo_Parcial_Laboratorio_I.c: In function ‘controller_editArcade’:
+../src/Segundo_Parcial_Laboratorio_I.c:13:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   13 | {
+      | ^
+In file included from ../src/Segundo_Parcial_Laboratorio_I.c:10:
+../src/controller.h:36:5: error: old-style parameter declarations in prototyped function definition
+   36 | int controller_editArcade(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedList* pListGame)
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../src/Segundo_Parcial_Laboratorio_I.c:139: error: expected ‘{’ at end of input
+../src/Segundo_Parcial_Laboratorio_I.c:139: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/subdir.mk:47: src/Segundo_Parcial_Laboratorio_I.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
-20:22:27 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+00:56:17 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/eTracking.c
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
-../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
-  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
-      |                                   ^~~~~~~~~~
-../src/eTracking.c:438:21: warning: ‘userBuffer’ is used uninitialized [-Wuninitialized]
-  438 |         userList[11]=userBuffer[1];
-      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
-../src/eTracking.c:422:19: note: ‘userBuffer’ declared here
-  422 |         eTracking userBuffer[6];
-      |                   ^~~~~~~~~~
-Finished building: ../src/eTracking.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
  
-Building target: Primer_Parcial_Laboratorio_I
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
  
-20:24:47 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/eTracking.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
-../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
-  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
-      |                                   ^~~~~~~~~~
-../src/eTracking.c:449:21: warning: ‘userBuffer’ is used uninitialized [-Wuninitialized]
-  449 |         userList[12]=userBuffer[2];
-      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
-../src/eTracking.c:422:19: note: ‘userBuffer’ declared here
-  422 |         eTracking userBuffer[6];
-      |                   ^~~~~~~~~~
-Finished building: ../src/eTracking.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:25:42 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/eTracking.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
-../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
-  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
-      |                                   ^~~~~~~~~~
-../src/eTracking.c:461:21: warning: ‘userBuffer’ is used uninitialized [-Wuninitialized]
-  461 |         userList[13]=userBuffer[3];
-      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
-../src/eTracking.c:422:19: note: ‘userBuffer’ declared here
-  422 |         eTracking userBuffer[6];
-      |                   ^~~~~~~~~~
-Finished building: ../src/eTracking.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:26:39 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/eTracking.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
-../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
-  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
-      |                                   ^~~~~~~~~~
-../src/eTracking.c:473:21: warning: ‘userBuffer’ is used uninitialized [-Wuninitialized]
-  473 |         userList[14]=userBuffer[4];
-      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
-../src/eTracking.c:422:19: note: ‘userBuffer’ declared here
-  422 |         eTracking userBuffer[6];
-      |                   ^~~~~~~~~~
-Finished building: ../src/eTracking.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:28:48 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/eTracking.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-../src/eTracking.c: In function ‘eTracking_ForceTrackings’:
-../src/eTracking.c:434:35: warning: implicit declaration of function ‘myTime_add’ [-Wimplicit-function-declaration]
-  434 |         userBuffer[0].arrivalTime=myTime_add(distInSec);
-      |                                   ^~~~~~~~~~
-Finished building: ../src/eTracking.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:29:41 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building file: ../src/eTracking.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-Finished building: ../src/eTracking.c
- 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:30:14 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
-make all 
-Building file: ../src/Primer_Parcial_Laboratorio_I.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Primer_Parcial_Laboratorio_I.d" -MT"src/Primer_Parcial_Laboratorio_I.o" -o "src/Primer_Parcial_Laboratorio_I.o" "../src/Primer_Parcial_Laboratorio_I.c"
-Finished building: ../src/Primer_Parcial_Laboratorio_I.c
- 
-Building file: ../src/uOperations.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/uOperations.d" -MT"src/uOperations.o" -o "src/uOperations.o" "../src/uOperations.c"
-Finished building: ../src/uOperations.c
- 
-Building target: Primer_Parcial_Laboratorio_I
-Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
- 
-20:30:15 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+00:56:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-20:32:44 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+00:56:20 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
-Building file: ../src/eTracking.c
+make: No se hace nada para 'all'.
+00:56:41 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:03:54 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
 Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/eTracking.d" -MT"src/eTracking.o" -o "src/eTracking.o" "../src/eTracking.c"
-Finished building: ../src/eTracking.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
  
-Building target: Primer_Parcial_Laboratorio_I
+Building target: Segundo_Parcial_Laboratorio_I
 Invoking: GCC C Linker
-gcc  -o "Primer_Parcial_Laboratorio_I" ./src/Primer_Parcial_Laboratorio_I.o ./src/eProduct.o ./src/eTracking.o ./src/eUser.o ./src/input.o ./src/menu.o ./src/myTime.o ./src/operations.o ./src/uOperations.o   
-Finished building target: Primer_Parcial_Laboratorio_I
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
  
-20:32:46 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+01:03:55 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
-20:34:08 **** Incremental Build of configuration Debug for project Primer_Parcial_Laboratorio_I ****
+01:04:30 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
 make all 
 make: No se hace nada para 'all'.
+01:04:31 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:08:12 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:08:13 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:13:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:13:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:14:17 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:19:29 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:19:30 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:20:17 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:20:47 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:20:48 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:21:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:24:04 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:24:05 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:24:13 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:24:14 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:34:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:34:06 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:36:14 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:39:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:39:44 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:39:45 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:39:59 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:45:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_listSalonFourPlusArcade’:
+../src/controller.c:1123:99: error: ‘salonId’ undeclared (first use in this function); did you mean ‘Salon’?
+ 1123 |                                 controller_countArcadeBySalon(pArcadeList, pListSalon, pListGame, salonId)
+      |                                                                                                   ^~~~~~~
+      |                                                                                                   Salon
+../src/controller.c:1123:99: note: each undeclared identifier is reported only once for each function it appears in
+../src/controller.c:1123:107: error: expected ‘;’ before ‘if’
+ 1123 |                                 controller_countArcadeBySalon(pArcadeList, pListSalon, pListGame, salonId)
+      |                                                                                                           ^
+      |                                                                                                           ;
+ 1124 |                                 if(pSalon != NULL)
+      |                                 ~~                                                                         
+../src/controller.c:1110:24: warning: variable ‘pSalon’ set but not used [-Wunused-but-set-variable]
+ 1110 |                 Salon* pSalon;
+      |                        ^~~~~~
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:46:13 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:47:00 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:47:27 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:47:28 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:51:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:51:48 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:51:51 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:53:02 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:53:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+01:56:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+01:56:04 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:02:07 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_ListArcadeTwoPlayer’:
+../src/controller.c:1351:1: error: expected declaration or statement at end of input
+ 1351 | }
+      | ^
+At top level:
+../src/controller.c:1299:5: warning: ‘controller_saveGame’ defined but not used [-Wunused-function]
+ 1299 | int controller_saveGame(char* path , LinkedList* pGamelist)
+      |     ^~~~~~~~~~~~~~~~~~~
+../src/controller.c:1236:5: warning: ‘controller_saveArcade’ defined but not used [-Wunused-function]
+ 1236 | int controller_saveArcade(char* path , LinkedList* pArcadelist)
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../src/controller.c:1177:5: warning: ‘controller_saveSalon’ defined but not used [-Wunused-function]
+ 1177 | int controller_saveSalon(char* path , LinkedList* pSalonlist)
+      |     ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:02:08 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_ListArcadeTwoPlayer’:
+../src/controller.c:1351:1: error: expected declaration or statement at end of input
+ 1351 | }
+      | ^
+At top level:
+../src/controller.c:1299:5: warning: ‘controller_saveGame’ defined but not used [-Wunused-function]
+ 1299 | int controller_saveGame(char* path , LinkedList* pGamelist)
+      |     ^~~~~~~~~~~~~~~~~~~
+../src/controller.c:1236:5: warning: ‘controller_saveArcade’ defined but not used [-Wunused-function]
+ 1236 | int controller_saveArcade(char* path , LinkedList* pArcadelist)
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../src/controller.c:1177:5: warning: ‘controller_saveSalon’ defined but not used [-Wunused-function]
+ 1177 | int controller_saveSalon(char* path , LinkedList* pSalonlist)
+      |     ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:02:25 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:02:26 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:03:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:03:58 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:04:45 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:04:46 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:05:39 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:05:40 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:09:42 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:09:43 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:11:17 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:11:18 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:12:02 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:12:04 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:13:21 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:13:21 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:13:56 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:13:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:17:31 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:17:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:17:51 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:17:52 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:27:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:27:36 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:27:37 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:33:46 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_ListSalonReport’:
+../src/controller.c:1207:13: warning: unused variable ‘passangerIndex’ [-Wunused-variable]
+ 1207 |         int passangerIndex;
+      |             ^~~~~~~~~~~~~~
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:33:55 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:34:19 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Segundo_Parcial_Laboratorio_I.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Segundo_Parcial_Laboratorio_I.d" -MT"src/Segundo_Parcial_Laboratorio_I.o" -o "src/Segundo_Parcial_Laboratorio_I.o" "../src/Segundo_Parcial_Laboratorio_I.c"
+Finished building: ../src/Segundo_Parcial_Laboratorio_I.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:34:20 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:35:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:35:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:36:54 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:36:55 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:38:41 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_listSalon’:
+../src/controller.c:687:107: error: expected ‘;’ before ‘controller_printSalon’
+  687 |                                 printf( "\n------------------------------------------------------------|")
+      |                                                                                                           ^
+      |                                                                                                           ;
+  688 |                                 controller_printSalon(pSalon);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~                                                      
+../src/controller.c: In function ‘controller_listSalonFourPlusArcade’:
+../src/controller.c:1136:107: error: expected ‘;’ before ‘controller_printSalon’
+ 1136 |                                 printf( "\n------------------------------------------------------------|")
+      |                                                                                                           ^
+      |                                                                                                           ;
+ 1137 |                                 controller_printSalon(pSalon);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~                                                      
+../src/controller.c: In function ‘controller_ListSalonReport’:
+../src/controller.c:1223:107: error: expected ‘;’ before ‘controller_printSalon’
+ 1223 |                                 printf( "\n------------------------------------------------------------|")
+      |                                                                                                           ^
+      |                                                                                                           ;
+ 1224 |                                 controller_printSalon(pSalon);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~                                                      
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:38:42 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_listSalon’:
+../src/controller.c:687:107: error: expected ‘;’ before ‘controller_printSalon’
+  687 |                                 printf( "\n------------------------------------------------------------|")
+      |                                                                                                           ^
+      |                                                                                                           ;
+  688 |                                 controller_printSalon(pSalon);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~                                                      
+../src/controller.c: In function ‘controller_listSalonFourPlusArcade’:
+../src/controller.c:1136:107: error: expected ‘;’ before ‘controller_printSalon’
+ 1136 |                                 printf( "\n------------------------------------------------------------|")
+      |                                                                                                           ^
+      |                                                                                                           ;
+ 1137 |                                 controller_printSalon(pSalon);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~                                                      
+../src/controller.c: In function ‘controller_ListSalonReport’:
+../src/controller.c:1223:107: error: expected ‘;’ before ‘controller_printSalon’
+ 1223 |                                 printf( "\n------------------------------------------------------------|")
+      |                                                                                                           ^
+      |                                                                                                           ;
+ 1224 |                                 controller_printSalon(pSalon);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~                                                      
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:39:03 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:39:05 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:39:48 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:39:49 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:40:50 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:40:51 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:43:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:43:48 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:43:56 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:43:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:46:10 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:46:11 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:46:46 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:46:47 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:52:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:52:58 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:58:22 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+02:58:23 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:59:15 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+02:59:16 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:01:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:02:01 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:04:28 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+../src/Arcade.c: In function ‘Arcade_setData’:
+../src/Arcade.c:402:72: error: expected ‘;’ before ‘Arcade_delete’
+  402 |                                 printf("\nJUGADORES:%d", this->players)
+      |                                                                        ^
+      |                                                                        ;
+  403 |                                 Arcade_delete(&arcadeBuffer);
+      |                                 ~~~~~~~~~~~~~                           
+make: *** [src/subdir.mk:47: src/Arcade.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:04:35 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:04:38 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:05:29 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:05:30 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:06:28 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:06:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:06:33 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:09:54 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:11:39 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:11:40 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:12:29 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/Arcade.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Arcade.d" -MT"src/Arcade.o" -o "src/Arcade.o" "../src/Arcade.c"
+Finished building: ../src/Arcade.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:12:32 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:12:33 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:41:13 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c:1107:4: error: expected identifier or ‘(’ before ‘[’ token
+ 1107 | int[4] controller_countGenreArcadeBySalon(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedList* pListGame, int salonId)
+      |    ^
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:41:25 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_countGenreArcadeBySalon’:
+../src/controller.c:1147:16: warning: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Wint-conversion]
+ 1147 |         return rtn;
+      |                ^~~
+../src/controller.c:1113:13: warning: unused variable ‘arcadeCount’ [-Wunused-variable]
+ 1113 |         int arcadeCount=0;
+      |             ^~~~~~~~~~~
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:41:36 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_countGenreArcadeBySalon’:
+../src/controller.c:1109:20: warning: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+ 1109 |         int* rtn = -1;
+      |                    ^
+../src/controller.c:1113:13: warning: unused variable ‘arcadeCount’ [-Wunused-variable]
+ 1113 |         int arcadeCount=0;
+      |             ^~~~~~~~~~~
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:41:49 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_countGenreArcadeBySalon’:
+../src/controller.c:1113:13: warning: unused variable ‘arcadeCount’ [-Wunused-variable]
+ 1113 |         int arcadeCount=0;
+      |             ^~~~~~~~~~~
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:43:51 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+../src/controller.c: In function ‘controller_countGenreArcadeBySalon’:
+../src/controller.c:1140:70: error: ‘PLATAFORMA’ undeclared (first use in this function); did you mean ‘PLATFORM’?
+ 1140 |                                                                 case PLATAFORMA:
+      |                                                                      ^~~~~~~~~~
+      |                                                                      PLATFORM
+../src/controller.c:1140:70: note: each undeclared identifier is reported only once for each function it appears in
+../src/controller.c:1141:73: error: ‘cantPlataforma’ undeclared (first use in this function)
+ 1141 |                                                                         cantPlataforma++;
+      |                                                                         ^~~~~~~~~~~~~~
+../src/controller.c:1143:70: error: ‘LABERINTO’ undeclared (first use in this function); did you mean ‘LABYRINTH’?
+ 1143 |                                                                 case LABERINTO:
+      |                                                                      ^~~~~~~~~
+      |                                                                      LABYRINTH
+../src/controller.c:1144:73: error: ‘cantLaberinto’ undeclared (first use in this function)
+ 1144 |                                                                         cantLaberinto++;
+      |                                                                         ^~~~~~~~~~~~~
+../src/controller.c:1114:13: warning: unused variable ‘mazeCount’ [-Wunused-variable]
+ 1114 |         int mazeCount = 0;
+      |             ^~~~~~~~~
+make: *** [src/subdir.mk:47: src/controller.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:45:59 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
+03:46:24 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:46:25 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:46:28 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:47:57 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+make: No se hace nada para 'all'.
+03:49:56 **** Incremental Build of configuration Debug for project Segundo_Parcial_Laboratorio_I ****
+make all 
+Building file: ../src/controller.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/controller.d" -MT"src/controller.o" -o "src/controller.o" "../src/controller.c"
+Finished building: ../src/controller.c
+ 
+Building target: Segundo_Parcial_Laboratorio_I
+Invoking: GCC C Linker
+gcc  -o "Segundo_Parcial_Laboratorio_I" ./src/Arcade.o ./src/Juego.o ./src/LinkedList.o ./src/Salon.o ./src/Segundo_Parcial_Laboratorio_I.o ./src/controller.o ./src/input.o ./src/menu.o ./src/operations.o ./src/parser.o   
+Finished building target: Segundo_Parcial_Laboratorio_I
+ 
