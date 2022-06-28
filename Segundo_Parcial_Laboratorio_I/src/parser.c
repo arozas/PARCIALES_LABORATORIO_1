@@ -139,3 +139,111 @@ int parser_JuegoFromText(FILE* pFile , LinkedList* pGameList)
 	}
 	return rtn;
 }
+/// @fn int parser_SalonFromBinary(FILE*, LinkedList*)
+/// @brief
+///
+/// @param pFile
+/// @param pSalonList
+/// @return
+int parser_SalonFromBinary(FILE* pFile , LinkedList* pSalonList)
+{
+	int retorno = 1;
+	Salon* this;
+	if (pFile != NULL && pSalonList != NULL)
+	{
+		while(!feof(pFile))
+		{
+			if(fread(&this, sizeof(this), 1,pFile) !=1)
+			{
+				if(feof(pFile))
+				{
+					break;
+				}
+				else
+				{
+					printf("ERROR EN LA LECTURA DE REGISTRO\n");
+				}
+			}
+			else
+			{
+				printf("ID%d|NAME%s|ADRESS%s|TYPE%d\n",this->id,this->name,this->adress,this->type);
+				ll_add(pSalonList, this);
+			}
+		}
+		retorno=0;
+	}
+
+    return retorno;
+}
+/// @fn int parser_ArcadeFromBinary(FILE*, LinkedList*)
+/// @brief
+///
+/// @param pFile
+/// @param pArcadeList
+/// @return
+int parser_ArcadeFromBinary(FILE* pFile , LinkedList* pArcadeList)
+{
+	int retorno = 1;
+	Arcade* this;
+	if (pFile != NULL && pArcadeList != NULL)
+	{
+		while(!feof(pFile))
+		{
+			if(fread(&this, sizeof(this), 1,pFile) !=1)
+			{
+				if(feof(pFile))
+				{
+					break;
+				}
+				else
+				{
+					printf("ERROR EN LA LECTURA DE REGISTRO\n");
+				}
+			}
+			else
+			{
+				printf("ID%d|NATIONALITY%s|SOUNDTYPE%d|PLAYERS%d|COINCAP%d|SALONID%d|GAMEID%d\n",this->id,this->nationality,this->soundType,this->players,this->coinCapacity,this->FKSalon,this->FKGame);
+				ll_add(pArcadeList, this);
+			}
+		}
+		retorno=0;
+	}
+
+    return retorno;
+}
+/// @fn int parser_GameFromBinary(FILE*, LinkedList*)
+/// @brief
+///
+/// @param pFile
+/// @param pGameList
+/// @return
+int parser_GameFromBinary(FILE* pFile , LinkedList* pGameList)
+{
+	int retorno = 1;
+	Juego* this;
+	if (pFile != NULL && pGameList != NULL)
+	{
+		while(!feof(pFile))
+		{
+			if(fread(&this, sizeof(this), 1,pFile) !=1)
+			{
+				if(feof(pFile))
+				{
+					break;
+				}
+				else
+				{
+					printf("ERROR EN LA LECTURA DE REGISTRO\n");
+				}
+			}
+			else
+			{
+				printf("ID%d|NAME%s|COMPANY%s|GENRE%d\n",this->id,this->name,this->company,this->genre);
+				ll_add(pGameList, this);
+			}
+		}
+		retorno=0;
+	}
+
+    return retorno;
+}

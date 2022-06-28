@@ -148,6 +148,102 @@ int controller_loadGame(char* path , LinkedList* pGameList)
 	}
 	return rtn;
 }
+/// @fn int controller_loadSalonFromBinary(char*, LinkedList*)
+/// @brief
+///
+/// @param path
+/// @param pSalonList
+/// @return
+int controller_loadSalonFromBinary(char* path , LinkedList* pSalonList)
+{
+	int retorno = -1;
+	if(path != NULL && pSalonList != NULL)
+	{
+		if(ll_len(pSalonList)>0)
+		{
+			puts("YA HAY UN ARCHIVO CARGADO");
+		}
+		else
+		{
+			FILE* pFile=fopen(path,"rb");
+			if(parser_SalonFromBinary(pFile, pSalonList)==1)
+			{
+				printf("NO SE PUDO CARGAR EL ARCHIVO\n");
+			}
+			else
+			{
+				printf("SE CARGO EL ARCHIVO BINARIO DE SALONES\n");
+				retorno = 0;
+			}
+			fclose(pFile);
+		}
+	}
+	return retorno;
+}
+/// @fn int controller_loadArcadeFromBinary(char*, LinkedList*)
+/// @brief
+///
+/// @param path
+/// @param pArcadeList
+/// @return
+int controller_loadArcadeFromBinary(char* path , LinkedList* pArcadeList)
+{
+	int retorno = -1;
+	if(path != NULL && pArcadeList != NULL)
+	{
+		if(ll_len(pArcadeList)>0)
+		{
+			puts("YA HAY UN ARCHIVO CARGADO");
+		}
+		else
+		{
+			FILE* pFile=fopen(path,"rb");
+			if(parser_ArcadeFromBinary(pFile, pArcadeList)==1)
+			{
+				printf("NO SE PUDO CARGAR EL ARCHIVO\n");
+			}
+			else
+			{
+				printf("SE CARGO EL ARCHIVO BINARIO DE SALONES\n");
+				retorno = 0;
+			}
+			fclose(pFile);
+		}
+	}
+	return retorno;
+}
+/// @fn int controller_loadGameFromBinary(char*, LinkedList*)
+/// @brief
+///
+/// @param path
+/// @param pGameList
+/// @return
+int controller_loadGameFromBinary(char* path , LinkedList* pGameList)
+{
+	int retorno = -1;
+	if(path != NULL && pGameList != NULL)
+	{
+		if(ll_len(pGameList)>0)
+		{
+			puts("YA HAY UN ARCHIVO CARGADO");
+		}
+		else
+		{
+			FILE* pFile=fopen(path,"rb");
+			if(parser_GameFromBinary(pFile, pGameList)==1)
+			{
+				printf("NO SE PUDO CARGAR EL ARCHIVO\n");
+			}
+			else
+			{
+				printf("SE CARGO EL ARCHIVO BINARIO DE SALONES\n");
+				retorno = 0;
+			}
+			fclose(pFile);
+		}
+	}
+	return retorno;
+}
 //====================================================== ADD ==============================================================================
 /// @fn int controller_addSalon(LinkedList*)
 /// @brief
@@ -223,10 +319,10 @@ int controller_addArcade(LinkedList* pArcadeList, LinkedList* pSalonList, Linked
 							Arcade_setId(pArcade, lastID);
 							ll_add(pArcadeList, pArcade);
 							printf("\nSE HA CARGADO CON EXITO EL NUEVO ARCADE");
-							printf(	"\n----------------------------------------------------------------------------|");
-							printf("\n%-6s%-10s%-15s%-15s%-15s%-15s","ID","SONIDO","JUGADORES","FICHAS MAX", "SALON", "JUEGO");
+							printf(	"\n------------------------------------------------------------------------------------------------|");
+							printf("\n%-6s%-10s%-15s%-15s%-15s%-15s%-15s","ID","SONIDO","NACIONALIDAD","JUGADORES","FICHAS MAX", "SALON", "JUEGO");
 							controller_printArcade(pArcade, pSalonList, pGameList);
-							printf(	"\n----------------------------------------------------------------------------|");
+							printf(	"\n------------------------------------------------------------------------------------------------|");
 							rtn = 0;
 						}
 						else
@@ -1976,6 +2072,13 @@ int controller_reportG(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedLi
 		arcadeListSize  = ll_len(arcadeList);
 		if(gameListSize != -1 && arcadeListSize != -1)
 		{
+			printf(
+					"\n|:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|"
+					"\n                               ARCADES SONIDO MONO Y JUEGOS PLATAFORMA"
+					"\n|:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|");
+			printf(	"\n------------------------------------------------------------------------------------------------------|");
+			printf("\n%-6s%-10s%-15s%-15s%-15s%-15s%-15s%-15s","ID","SONIDO","NACIONALIDAD","JUGADORES","FICHAS MAX", "SALON", "JUEGO", "GENERO");
+			printf(	"\n------------------------------------------------------------------------------------------------------|");
 			for (i = 0; i < arcadeListSize; i++)
 			{
 				pArcade = (Arcade*)ll_get(pArcadeList, i);
@@ -1983,14 +2086,34 @@ int controller_reportG(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedLi
 				Arcade_getSoundType(pArcade, &arcadeSound);
 				for(j = 0; j < gameListSize; j++)
 				{
-					gameBuffer = (Juego*)ll_get(pListGame, j);
+					gameBuffer = (Juego*)ll_get(gameList, j);
 					Juego_getId(gameBuffer, &gameId);
 					Juego_getGenre(gameBuffer, &genre);
 					if(gameId==arcadeGameID && genre == PLATFORM && arcadeSound == MONO)
 					{
-						printf(	"\n------------------------------------------------------------------------------------------------|");
-						controller_printArcade(pArcade, pListSalon, pListGame);
-						printf(	"\n------------------------------------------------------------------------------------------------|");
+						controller_printArcade(pArcade, pListSalon, gameList);
+						switch(genre)
+						{
+						case AVENTURE:
+							printf("%-20s","AVENTURA");
+							break;
+						case BEATEMUP:
+							printf("%-20s","BEAT'EM UP");
+							break;
+						case LABYRINTH:
+							printf("%-20s","LABERINTO");
+							break;
+						case FIGHT:
+							printf("%-20s","PELEA");
+							break;
+						case PLATFORM:
+							printf("%-20s","PLATAFORMA");
+							break;
+						case SHOOTER:
+							printf("%-20s","TIROS");
+							break;
+						}
+						printf(	"\n------------------------------------------------------------------------------------------------------|");
 						rtn = 0;
 					}
 				}
@@ -2000,6 +2123,66 @@ int controller_reportG(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedLi
 	return rtn;
 }
 //======================================================  END REPORTS ==============================================================================
+//====================================================== FILTER ==============================================================================
+/// @fn LinkedList controller_filterArcadeBySound*(LinkedList*)
+/// @brief
+///
+/// @param pArcadeList
+/// @return
+LinkedList* controller_filterArcadeBySound(LinkedList* pArcadeList)
+{
+
+	LinkedList* AuxLinkedlist = NULL;
+	int(*pFilter)(void*) = Arcade_filterBySoundMono;
+	if(pArcadeList != NULL && ll_isEmpty(pArcadeList) == 0)
+	{
+		AuxLinkedlist = ll_filter(pArcadeList,pFilter);
+	}
+	return AuxLinkedlist;
+}
+/// @fn int controller_filteredArcadeList(LinkedList*, LinkedList*, LinkedList*, int)
+/// @brief
+///
+/// @param pArcadeList
+/// @param pListSalon
+/// @param pListGame
+/// @param salonId
+/// @return
+int controller_listFilteredArcadeList(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedList* pListGame)
+{
+	int rtn = -1;
+	int i;
+	int listSize;
+	Arcade* pArcade;
+	LinkedList* AuxLinkedlist = NULL;
+	AuxLinkedlist = controller_filterArcadeBySound(pArcadeList);
+	if(AuxLinkedlist != NULL && pListSalon != NULL && pListGame != NULL)
+	{
+		listSize = ll_len(AuxLinkedlist);
+		if(listSize != -1)
+		{
+			printf(
+					"\n|:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|"
+					"\n                                 ARCADES FILTRADOS POR SONIDO MONO"
+					"\n|:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|");
+			printf("\n%-6s%-10s%-15s%-15s%-15s%-15s%-15s","ID","SONIDO","NACIONALIDAD","JUGADORES","FICHAS MAX", "SALON", "JUEGO");
+			for (i = 0; i < listSize; i++)
+			{
+				pArcade = (Arcade*)ll_get(AuxLinkedlist, i);
+				if(pArcade != NULL)
+				{
+					printf(	"\n------------------------------------------------------------------------------------------------|");
+					controller_printArcade(pArcade, pListSalon, pListGame);
+					rtn = 0;
+				}
+			}
+			printf(	"\n------------------------------------------------------------------------------------------------|\n");
+		}
+	}
+	return rtn;
+}
+
+//======================================================END FILTER ==============================================================================
 //====================================================== SAVE ==============================================================================
 /// @fn int controller_saveSalon(char*, LinkedList*)
 /// @brief
@@ -2182,6 +2365,102 @@ int controller_saveGame(char* path , LinkedList* pGamelist)
 		printf("\nSE GRABO EL ARICHIVO CON EXITO");
 	}
 	fclose(pFile);
+	return rtn;
+}
+/// @fn int controller_savesSalonAsBinary(char*, LinkedList*)
+/// @brief
+///
+/// @param path
+/// @param pSalonlist
+/// @return
+int controller_savesSalonAsBinary(char* path , LinkedList* pSalonlist)
+{
+	int rtn = 1;
+	FILE* pFile;
+	int i;
+	Salon* this = NULL;
+	if (path != NULL && pSalonlist != NULL)
+	{
+		pFile = fopen(path,"wb");
+		if (pFile != NULL)
+		{
+			int cantidad = ll_len(pSalonlist);
+			for (i=0; i< cantidad; i++)
+			{
+				this = (Salon*) ll_get(pSalonlist, i);
+				fwrite(this, sizeof(Salon),1,pFile);
+			}
+		}
+		if(!fclose(pFile))
+		{
+			printf("\nSE GRABO EL ARICHIVO CON EXITO");
+			rtn = 0;
+		}
+	}
+	return rtn;
+}
+/// @fn int controller_savesArcadeAsBinary(char*, LinkedList*)
+/// @brief
+///
+/// @param path
+/// @param pArcadelist
+/// @return
+int controller_savesArcadeAsBinary(char* path , LinkedList* pArcadelist)
+{
+	int rtn = 1;
+	FILE* pFile;
+	int i;
+	Arcade* this = NULL;
+	if (path != NULL && pArcadelist != NULL)
+	{
+		pFile = fopen(path,"wb");
+		if (pFile != NULL)
+		{
+			int cantidad = ll_len(pArcadelist);
+			for (i=0; i< cantidad; i++)
+			{
+				this = (Arcade*) ll_get(pArcadelist, i);
+				fwrite(this, sizeof(Arcade),1,pFile);
+			}
+		}
+		if(!fclose(pFile))
+		{
+			printf("\nSE GRABO EL ARICHIVO CON EXITO");
+			rtn = 0;
+		}
+	}
+	return rtn;
+}
+/// @fn int controller_savesGameAsBinary(char*, LinkedList*)
+/// @brief
+///
+/// @param path
+/// @param pGamelist
+/// @return
+int controller_savesGameAsBinary(char* path , LinkedList* pGamelist)
+{
+	int rtn = 1;
+	FILE* pFile;
+	int i;
+	Juego* this = NULL;
+	if (path != NULL && pGamelist != NULL)
+	{
+		pFile = fopen(path,"wb");
+		if (pFile != NULL)
+		{
+			int cantidad = ll_len(pGamelist);
+			for (i=0; i< cantidad; i++)
+			{
+				this = (Juego*) ll_get(pGamelist, i);
+				fwrite(this, sizeof(Juego),1,pFile);
+			}
+		}
+		if(!fclose(pFile))
+		{
+			printf("\nSE GRABO EL ARICHIVO CON EXITO");
+			rtn = 0;
+		}
+	}
 	return rtn;
 }
 //======================================================  END SAVE ==============================================================================

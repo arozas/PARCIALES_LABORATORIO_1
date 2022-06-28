@@ -70,4 +70,6 @@ int Arcade_sortByCoin(void* pElementOne,void* pElementTwo);
 int Arcade_sortBySaloon(void* pElementOne,void* pElementTwo);
 int Arcade_sortByGame(void* pElementOne,void* pElementTwo);
 
+int Arcade_filterBySoundMono(void* element);
+
 #endif /* ARCADE_H_ */

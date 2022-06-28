@@ -584,3 +584,17 @@ int Arcade_sortByGame(void* pElementOne,void* pElementTwo)
 	return rtn;
 }
 //====================================================== END SORT ==============================================================================
+int Arcade_filterBySoundMono(void* element)
+{
+	int ret = 0;
+	int soundMono;
+	if(element != NULL)
+	{
+		Arcade_getSoundType(element, &soundMono);
+		if(soundMono == MONO)
+		{
+			ret = 1;
+		}
+	}
+	return ret;
+}

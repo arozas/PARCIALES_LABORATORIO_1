@@ -7,7 +7,15 @@
  Description : Segundo Parcial de Laboratorio I.
  ============================================================================
  */
+/*
+CREAR LINKED LIST FILTER
+AGREGAR BINARIOS
+ */
 #include "controller.h"
+
+#define TEXT 1
+#define BINARY 2
+#define NO_MODE 3
 
 int main(void)
 {
@@ -17,9 +25,21 @@ int main(void)
 	LinkedList* arcadeList =ll_newLinkedList();
 	LinkedList* gameList =ll_newLinkedList();
 
-	controller_loadSalon("salones.csv", salonList);
-	controller_loadArcade("arcade.csv", arcadeList);
-	controller_loadGame("juegos.csv", gameList);
+	int saveLoadMode = BINARY;
+
+	switch(saveLoadMode)
+	{
+	case TEXT:
+		controller_loadSalon("salones.csv", salonList);
+		controller_loadArcade("arcade.csv", arcadeList);
+		controller_loadGame("juegos.csv", gameList);
+		break;
+	case BINARY:
+		//controller_loadSalonFromBinary("salones.bin", salonList);
+		controller_loadArcadeFromBinary("arcade.bin", arcadeList);
+		controller_loadGameFromBinary("juegos.bin", gameList);
+		break;
+	}
 
 	do{
 		menu[0]=menu_menu("SEGUNDO PARCIAL LABORATORIO",
@@ -27,8 +47,9 @@ int main(void)
 				"\n2.  MENU ARCADES."
 				"\n3.  MENU JUEGOS."
 				"\n4.  MENU INFORMES."
-				"\n5.  FINALIZAR EL PROGRAMA.",
-				"ERROR, INTENTE OPCION <1-5>:", RETRIES, 5);
+				"\n5.  LISTAR ARCADES FILTRADOS"
+				"\n6.  FINALIZAR EL PROGRAMA.",
+				"ERROR, INTENTE OPCION <1-5>:", RETRIES, 6);
 		switch(menu[0])
 		{
 		case -1:
@@ -151,10 +172,25 @@ int main(void)
 				}
 			}while(menu[4]<8);
 			break;
+		case 5:
+			controller_listFilteredArcadeList(arcadeList, salonList, gameList);
+			break;
 		}
-	}while(menu[0] < 5);
-	controller_saveSalon("salones.csv", salonList);
-	controller_saveArcade("arcade.csv", arcadeList);
-	controller_saveGame("juegos.csv", gameList);
+	}while(menu[0] < 6);
+
+	switch(saveLoadMode)
+	{
+	case TEXT:
+		controller_saveSalon("salones.csv", salonList);
+		controller_saveArcade("arcade.csv", arcadeList);
+		controller_saveGame("juegos.csv", gameList);
+		break;
+	case BINARY:
+		controller_savesSalonAsBinary("salones.bin", salonList);
+		controller_savesArcadeAsBinary("arcade.bin", arcadeList);
+		controller_savesGameAsBinary("juegos.bin", gameList);
+		break;
+	}
+
 	return EXIT_SUCCESS;
 }

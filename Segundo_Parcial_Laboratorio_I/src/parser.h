@@ -23,4 +23,8 @@ int parser_SalonFromText(FILE* pFile , LinkedList* pSalonList);
 int parser_ArcadeFromText(FILE* pFile , LinkedList* pArcadeList);
 int parser_JuegoFromText(FILE* pFile , LinkedList* pGameList);
 
+int parser_SalonFromBinary(FILE* pFile , LinkedList* pSalonList);
+int parser_ArcadeFromBinary(FILE* pFile , LinkedList* pArcadeList);
+int parser_GameFromBinary(FILE* pFile , LinkedList* pGameList);
+
 #endif /* PARSER_H_ */

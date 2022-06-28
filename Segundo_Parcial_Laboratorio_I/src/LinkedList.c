@@ -277,20 +277,20 @@ int ll_remove(LinkedList* this,int index)
 int ll_clear(LinkedList* this)
 {	//retorno -1 si la lista
 	int rtn = -1;
-	    int i;
-	    if(this != NULL)
-	    {
-	    	for (i = 0; i< ll_len(this); i++)
-	    	{
-				if(ll_remove(this, i) != 0)
-				{
-					rtn = -2;
-					break;
-				}
-				rtn = 0;
+	int i;
+	if(this != NULL)
+	{
+		for (i = 0; i< ll_len(this); i++)
+		{
+			if(ll_remove(this, i) != 0)
+			{
+				rtn = -2;
+				break;
 			}
-	    }
-	    return rtn;
+			rtn = 0;
+		}
+	}
+	return rtn;
 }
 /** \brief Elimina todos los elementos de la lista y la lista
  *
@@ -542,6 +542,36 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
 		}
 	}
 	return rtn;
+}
+/// @fn LinkedList ll_filter*(LinkedList*, int(*)(void*))
+/// @brief filtra los elemetos que cumplen determinado criterio en una linkedlist;
+///
+/// @param this
+/// @param pFunc
+/// @return
+LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
+{
+	void* pElement=NULL;
+	int sizeLinkedList;
+	LinkedList* filteredLinkedList=NULL;
+	if(this!=NULL && pFunc!=NULL)
+	{
+		filteredLinkedList = ll_newLinkedList();
 
+		if(filteredLinkedList!=NULL)
+		{
+			sizeLinkedList = ll_len(this);
+			for(int i = 0; i<sizeLinkedList; i++)
+			{
+
+				pElement=ll_get(this, i);
+				if(pFunc(pElement)== 1)
+				{
+					ll_add(filteredLinkedList, pElement);
+				}
+			}
+		}
+	}
+	return filteredLinkedList;
 }
 

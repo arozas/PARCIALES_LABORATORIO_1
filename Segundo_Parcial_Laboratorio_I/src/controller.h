@@ -28,6 +28,10 @@ void controller_msgErroMenu(void);
 int controller_loadSalon(char* path , LinkedList* pSalonList);
 int controller_loadArcade(char* path , LinkedList* pArcadeList);
 int controller_loadGame(char* path , LinkedList* pGameList);
+
+int controller_loadSalonFromBinary(char* path , LinkedList* pSalonList);
+int controller_loadArcadeFromBinary(char* path , LinkedList* pArcadeList);
+int controller_loadGameFromBinary(char* path , LinkedList* pGameList);
 //ADD
 int controller_addSalon(LinkedList* pSalonList);
 int controller_addArcade(LinkedList* pArcadeList, LinkedList* pSalonList, LinkedList* pGameList);
@@ -73,9 +77,16 @@ int controller_reportD(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedLi
 int controller_reportE(LinkedList* pListSalon, LinkedList* pListArcade, LinkedList* pListGame);
 int controller_reportF(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedList* pListGame);
 int controller_reportG(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedList* pListGame);
+//FILTER
+LinkedList* controller_filterArcadeBySound(LinkedList* pArcadeList);
+int controller_listFilteredArcadeList(LinkedList* pArcadeList, LinkedList* pListSalon, LinkedList* pListGame);
 //SAVE
 int controller_saveSalon(char* path , LinkedList* pSalonlist);
 int controller_saveArcade(char* path , LinkedList* pArcadelist);
 int controller_saveGame(char* path , LinkedList* pGamelist);
+
+int controller_savesSalonAsBinary(char* path , LinkedList* pSalonlist);
+int controller_savesArcadeAsBinary(char* path , LinkedList* pArcadelist);
+int controller_savesGameAsBinary(char* path , LinkedList* pGamelist);
 
 #endif /* CONTROLLER_H_ */
