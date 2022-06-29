@@ -147,33 +147,30 @@ int parser_JuegoFromText(FILE* pFile , LinkedList* pGameList)
 /// @return
 int parser_SalonFromBinary(FILE* pFile , LinkedList* pSalonList)
 {
-	int retorno = 1;
-	Salon* this;
-	if (pFile != NULL && pSalonList != NULL)
+	int rtn = -1;
+	if(pFile != NULL && pSalonList !=NULL)
 	{
-		while(!feof(pFile))
+		do
 		{
-			if(fread(&this, sizeof(this), 1,pFile) !=1)
+			Salon* this = Salon_new();
+			if(this !=NULL)
 			{
-				if(feof(pFile))
+				if(fread(this,sizeof(Salon),1,pFile) != 1)
 				{
+					free(this);
 					break;
 				}
 				else
 				{
-					printf("ERROR EN LA LECTURA DE REGISTRO\n");
+					if(ll_add(pSalonList,this) == 0)
+					{
+						rtn = 0;
+					}
 				}
 			}
-			else
-			{
-				printf("ID%d|NAME%s|ADRESS%s|TYPE%d\n",this->id,this->name,this->adress,this->type);
-				ll_add(pSalonList, this);
-			}
-		}
-		retorno=0;
+		}while(!feof(pFile));
 	}
-
-    return retorno;
+    return rtn;
 }
 /// @fn int parser_ArcadeFromBinary(FILE*, LinkedList*)
 /// @brief
@@ -183,33 +180,30 @@ int parser_SalonFromBinary(FILE* pFile , LinkedList* pSalonList)
 /// @return
 int parser_ArcadeFromBinary(FILE* pFile , LinkedList* pArcadeList)
 {
-	int retorno = 1;
-	Arcade* this;
-	if (pFile != NULL && pArcadeList != NULL)
+	int rtn = -1;
+	if(pFile != NULL && pArcadeList !=NULL)
 	{
-		while(!feof(pFile))
+		do
 		{
-			if(fread(&this, sizeof(this), 1,pFile) !=1)
+			Arcade* this = Arcade_new();
+			if(this !=NULL)
 			{
-				if(feof(pFile))
+				if(fread(this,sizeof(Arcade),1,pFile) != 1)
 				{
+					free(this);
 					break;
 				}
 				else
 				{
-					printf("ERROR EN LA LECTURA DE REGISTRO\n");
+					if(ll_add(pArcadeList,this) == 0)
+					{
+						rtn = 0;
+					}
 				}
 			}
-			else
-			{
-				printf("ID%d|NATIONALITY%s|SOUNDTYPE%d|PLAYERS%d|COINCAP%d|SALONID%d|GAMEID%d\n",this->id,this->nationality,this->soundType,this->players,this->coinCapacity,this->FKSalon,this->FKGame);
-				ll_add(pArcadeList, this);
-			}
-		}
-		retorno=0;
+		}while(!feof(pFile));
 	}
-
-    return retorno;
+    return rtn;
 }
 /// @fn int parser_GameFromBinary(FILE*, LinkedList*)
 /// @brief
@@ -219,31 +213,28 @@ int parser_ArcadeFromBinary(FILE* pFile , LinkedList* pArcadeList)
 /// @return
 int parser_GameFromBinary(FILE* pFile , LinkedList* pGameList)
 {
-	int retorno = 1;
-	Juego* this;
-	if (pFile != NULL && pGameList != NULL)
+	int rtn = -1;
+	if(pFile != NULL && pGameList !=NULL)
 	{
-		while(!feof(pFile))
+		do
 		{
-			if(fread(&this, sizeof(this), 1,pFile) !=1)
+			Juego* this = Juego_new();
+			if(this !=NULL)
 			{
-				if(feof(pFile))
+				if(fread(this,sizeof(Juego),1,pFile) != 1)
 				{
+					free(this);
 					break;
 				}
 				else
 				{
-					printf("ERROR EN LA LECTURA DE REGISTRO\n");
+					if(ll_add(pGameList,this) == 0)
+					{
+						rtn = 0;
+					}
 				}
 			}
-			else
-			{
-				printf("ID%d|NAME%s|COMPANY%s|GENRE%d\n",this->id,this->name,this->company,this->genre);
-				ll_add(pGameList, this);
-			}
-		}
-		retorno=0;
+		}while(!feof(pFile));
 	}
-
-    return retorno;
+    return rtn;
 }

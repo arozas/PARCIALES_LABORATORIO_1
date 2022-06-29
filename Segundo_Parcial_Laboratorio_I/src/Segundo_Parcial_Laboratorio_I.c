@@ -35,9 +35,9 @@ int main(void)
 		controller_loadGame("juegos.csv", gameList);
 		break;
 	case BINARY:
-		//controller_loadSalonFromBinary("salones.bin", salonList);
-		controller_loadArcadeFromBinary("arcade.bin", arcadeList);
-		controller_loadGameFromBinary("juegos.bin", gameList);
+		controller_loadSalonFromBinary("salones.dat", salonList);
+		controller_loadArcadeFromBinary("arcade.dat", arcadeList);
+		controller_loadGameFromBinary("juegos.dat", gameList);
 		break;
 	}
 
@@ -186,9 +186,9 @@ int main(void)
 		controller_saveGame("juegos.csv", gameList);
 		break;
 	case BINARY:
-		controller_savesSalonAsBinary("salones.bin", salonList);
-		controller_savesArcadeAsBinary("arcade.bin", arcadeList);
-		controller_savesGameAsBinary("juegos.bin", gameList);
+		controller_savesSalonAsBinary("salones.dat", salonList);
+		controller_savesArcadeAsBinary("arcade.dat", arcadeList);
+		controller_savesGameAsBinary("juegos.dat", gameList);
 		break;
 	}
 
